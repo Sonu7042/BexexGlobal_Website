@@ -5,9 +5,9 @@ import Header from './Header';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#f4f4f4] flex flex-col border-[2px] border-fuchsia-400">
-      <Header />
-      <main className="flex flex-col lg:flex-row justify-between items-start px-4 md:px-16 lg:px-24 py-8 flex-grow">
+    <div className="min-h-screen  flex flex-col ">
+      {/* <Header /> */}
+      <main className="flex flex-col lg:flex-row justify-between items-start flex-grow">
         {/* Left Block */}
         <div className="flex-1 flex flex-col justify-center max-w-xl mb-12 lg:mb-0 lg:mr-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-black mb-6">

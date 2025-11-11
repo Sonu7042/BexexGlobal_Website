@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <>
-        <header className="w-full flex justify-center mt-7 mb-12">
+        <header className="w-full flex justify-center mt-5 mb-5">
         <nav className="bg-white shadow-md rounded-full px-8 py-4 flex items-center w-[95vw] max-w-4xl">
           <span className="text-xl font-semibold mr-12 tracking-wide">Bexex</span>
           <ul className="hidden md:flex gap-8 flex-grow">
-            <li><a href="#" className="text-gray-900 font-medium">HOME</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">SERVICES</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">ABOUT US</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">RESOURCES</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-gray-900">COMMUNITIES</a></li>
+            <li><Link to={'/'} className="text-gray-900 font-medium">HOME</Link></li>
+            <li><Link to={'/services'} className="text-gray-700 hover:text-gray-900">SERVICES</Link></li>
+            <li><Link to={'/aboutus'} className="text-gray-700 hover:text-gray-900">ABOUT US</Link></li>
+            <li><Link to={'/resources'} className="text-gray-700 hover:text-gray-900">RESOURCES</Link></li>
+            <li><Link to={'/communities'} className="text-gray-700 hover:text-gray-900">COMMUNITIES</Link></li>
           </ul>
           <div className="ml-auto flex items-center">
             <button className="w-8 h-8 flex md:hidden items-center justify-center rounded hover:bg-gray-100">
