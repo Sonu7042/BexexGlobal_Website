@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-        <header className="w-full flex justify-center mt-5 mb-5">
-        <nav className="bg-white shadow-md rounded-full px-8 py-4 flex items-center w-[95vw] max-w-4xl">
+        <header className="w-full flex justify-center mt-5 mb-5 fixed z-50">
+        <nav className="bg-white shadow-md rounded-[19px] px-8 py-4 flex items-center w-[95vw] max-w-4xl">
           <span className="text-xl font-semibold mr-12 tracking-wide">Bexex</span>
           <ul className="hidden md:flex gap-8 flex-grow">
             <li><Link to={'/'} className="text-gray-900 font-medium">HOME</Link></li>

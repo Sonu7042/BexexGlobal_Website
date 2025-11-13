@@ -5,16 +5,24 @@ import { Outlet } from 'react-router-dom'
 import { store } from './redux/store'
 import { Provider } from 'react-redux'
 import BlueTrailGrid from './animation/BlueTrailGrid'
+import Home from './components/Home'
+import Services from './components/Services'
+import ProfileSection from './components/aboutSection'
 
 const App = () => {
   return (
     <Provider store={store} >
     <BlueTrailGrid/>
+
     <Header/>
 
-    <main className=' px-4 md:px-16 lg:px-24 py-8 z-50'>
-    <Outlet/>
+    <main className=' px-4 md:px-16 lg:px-12  z-50'>
+      <Home />
+      
+    <Services />
+    {/* <ProfileSection /> */}
     </main>
+    
     
     </Provider>
   )
