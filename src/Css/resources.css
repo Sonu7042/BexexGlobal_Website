@@ -1,0 +1,40 @@
+
+.animation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+  background: white;
+  padding: 40px;
+}
+
+.number-box {
+  font-size: 120px;
+  font-weight: bold;
+  color: #2d89ef;
+  width: 150px;
+  height: 150px;
+  background: #e6f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.content-box {
+  max-width: 400px;
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+.content-box h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.content-box p {
+  color: #555;
+  line-height: 1.6;
+}

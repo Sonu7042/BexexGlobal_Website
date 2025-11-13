@@ -1,36 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../Css/header.css"
 
 const Header = () => {
   return (
-    <>
-        <header className="w-full flex justify-center mt-5 mb-5 fixed z-50">
-        <nav className="bg-white shadow-md rounded-[19px] px-8 py-4 flex items-center w-[95vw] max-w-4xl">
-          <span className="text-xl font-semibold mr-12 tracking-wide">Bexex</span>
-          <ul className="hidden md:flex gap-8 flex-grow">
-            <li><Link to={'/'} className="text-gray-900 font-medium">HOME</Link></li>
-            <li><Link to={'/services'} className="text-gray-700 hover:text-gray-900">SERVICES</Link></li>
-            <li><Link to={'/aboutus'} className="text-gray-700 hover:text-gray-900">ABOUT US</Link></li>
-            <li><Link to={'/resources'} className="text-gray-700 hover:text-gray-900">RESOURCES</Link></li>
-            <li><Link to={'/communities'} className="text-gray-700 hover:text-gray-900">COMMUNITIES</Link></li>
-          </ul>
-          <div className="ml-auto flex items-center">
-            <button className="w-8 h-8 flex md:hidden items-center justify-center rounded hover:bg-gray-100">
-              {/* Hamburger Icon */}
-              <svg viewBox="0 0 20 20" fill="none" className="w-6 h-6"><path d="M3 6h14M3 10h14M3 14h14" stroke="black" strokeWidth="2" strokeLinecap="round"/></svg>
-            </button>
-            <button className="ml-3 hidden md:block rounded-full p-2 hover:bg-gray-100">
-              {/* Search Icon */}
-              <svg className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <circle cx="11" cy="11" r="8" strokeWidth="2"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-3.5-3.5"/>
-              </svg>
-            </button>
-          </div>
-        </nav>
-      </header>
-      
-    </>
-  )
-}
+    <header className="header">
+      <nav className="nav">
+        <span className="logo">Bexex</span>
 
-export default Header
+        <ul className="nav-links">
+          <li><Link to="/" className="nav-link active">HOME</Link></li>
+          <li><Link to="/services" className="nav-link">SERVICES</Link></li>
+          <li><Link to="/aboutus" className="nav-link">ABOUT US</Link></li>
+          <li><Link to="/resources" className="nav-link">RESOURCES</Link></li>
+          <li><Link to="/communities" className="nav-link">COMMUNITIES</Link></li>
+        </ul>
+
+        <div className="nav-actions">
+          {/* Hamburger (mobile only) */}
+          <button className="hamburger">
+            <svg viewBox="0 0 20 20" fill="none" className="hamburger-icon">
+              <path d="M3 6h14M3 10h14M3 14h14" stroke="black" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </button>
+
+          {/* Search Icon (desktop only) */}
+          <button className="search-btn">
+            <svg className="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="11" cy="11" r="8" strokeWidth="2" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-3.5-3.5" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

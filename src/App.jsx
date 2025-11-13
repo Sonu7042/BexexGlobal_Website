@@ -8,19 +8,19 @@ import BlueTrailGrid from './animation/BlueTrailGrid'
 import Home from './components/Home'
 import Services from './components/Services'
 import ProfileSection from './components/aboutSection'
+import Resources from './components/Resources'
 
 const App = () => {
   return (
     <Provider store={store} >
-    <BlueTrailGrid/>
 
     <Header/>
-
     <main className=' px-4 md:px-16 lg:px-12  z-50'>
-      <Home />
-      
-    <Services />
-    {/* <ProfileSection /> */}
+    <Home />
+    <Services/>
+    <Resources/>
+    
+
     </main>
     
     

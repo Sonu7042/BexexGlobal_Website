@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: heading;
+    src: url("../fonts/helveticanowtext-bold-demo.ttf");
+}
 
 
+h1, h2,h3 span{
+    font-family: heading;
+}
 
+p{
+    font-family: heading;
+}
 
-/* end mouse pointering animation */
+.applyfont{
+    font-family: heading;
+}
