@@ -94,7 +94,7 @@
   position: absolute;
   right: -1px;
   bottom: 2px;
-  max-width: 450px;
+  max-width: 540px;
   width: 30vw;
   display: none;
 }
@@ -181,6 +181,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 18px;
 }
 
 .card-image img {
@@ -226,4 +227,18 @@
 .brand-logo{
     width: 40px;
     height: 40px;
+}
+
+
+@media (max-width:426px){
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-content{
+    width: 100%;
+  }
+  .card-image{
+    width: 100%;
+  }
 }
