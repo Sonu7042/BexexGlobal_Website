@@ -14,6 +14,8 @@ import Clients from './components/Clients'
 import CompareConsulting from './components/CompareConsulting'
 import LetsConnect from './components/LetsConnect'
 import Lenis from "@studio-freight/lenis";
+import AnimationScrolling from './animation/AnimationScrolling'
+import About from './components/About'
 
 
 const App = () => {
@@ -43,16 +45,17 @@ const App = () => {
     <Header/>
 
 
-    <main className=' px-4 md:px-16 lg:px-12  z-50'>
+    <main className=' px-4 md:px-16 lg:px-12 '>
     <Home />
     <Services/>
-    <Resources/>
+    {/* <Resources/> */}
+    <AnimationScrolling/>
     <TeamList/>
     <Clients/>
     <CompareConsulting/>
     </main>
     <LetsConnect/>    
-    
+    <About />
     
     </Provider>
   )

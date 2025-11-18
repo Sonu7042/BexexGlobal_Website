@@ -55,7 +55,7 @@ export default function TeamList() {
   
 
   return (
-    <div className="teams-root">
+    <div className="teams-root ">
       <header>
         <div className="teams-brand">
           <img src={minilogo} className=" brand-logo"></img>

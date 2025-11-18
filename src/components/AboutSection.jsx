@@ -3,7 +3,7 @@ import { Plus } from "lucide-react";
 
 const ProfileSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center bg-gray-100 min-h-screen p-8 gap-8">
+    <div className="flex flex-col md:flex-row items-center justify-center bg-gray-100 min-h-screen p-8 gap-8 px-4 md:px-16 lg:px-12">
       {/* Left Section - Image */}
       <div className="flex-shrink-0">
         <img

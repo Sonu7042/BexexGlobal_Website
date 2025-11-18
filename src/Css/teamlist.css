@@ -198,3 +198,23 @@ header {
   }
 }
 
+
+
+main {
+  padding-left: 16px;   /* px-4  */
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {  /* md */
+  main {
+    padding-left: 64px;   /* px-16 */
+    padding-right: 64px;
+  }
+}
+
+@media (min-width: 1024px) {  /* lg */
+  main {
+    padding-left: 48px;   /* px-12 */
+    padding-right: 48px;
+  }
+}

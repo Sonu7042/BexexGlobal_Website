@@ -78,6 +78,9 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
 /* ====== CARD GRID ====== */
 .service-cards-grid {
   display: flex;
@@ -92,8 +95,14 @@
   transition: all 0.3s ease;
 }
 
+
+
+
+
+
+
 /* ====== CARD STYLING ====== */
-.service-card {
+.service-card{
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 8px #0001;
